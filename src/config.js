@@ -1,12 +1,12 @@
 const Store = require("electron-store");
 require("dotenv").config();
 
-// Store yapılandırması
+// Store build
 const store = new Store({
   encryptionKey: "buffer-app-secure-key",
 });
 
-// Varsayılan ayarlar
+// Default Settings
 const defaultSettings = {
   theme: "light",
   headlessMode: false,
@@ -15,7 +15,7 @@ const defaultSettings = {
   autoPublish: false,
 };
 
-// Modülden dışa aktarılan değişkenler
+// Module Export
 module.exports = {
   store,
   defaultSettings,
