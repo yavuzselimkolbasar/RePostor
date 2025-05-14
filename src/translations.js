@@ -1,4 +1,4 @@
-// Çeviri verileri
+// Translation Data
 const translations = {
   tr: {
     appTitle: "RePoster Uygulaması",
@@ -65,7 +65,6 @@ const translations = {
     statsPlatform: "Platform",
     statsShares: "Paylaşım",
     statsLastShare: "Son Paylaşım",
-    // Yeni çeviri alanları
     translateLabel: "Tweet Çevirisi",
     translateNone: "Çevirme (Orijinal)",
     translateTr: "Türkçe'ye çevir",
@@ -77,12 +76,12 @@ const translations = {
     translateDescription: "Tweetleri Buffer'a aktarmadan önce seçtiğiniz dile çevirir",
     translatingStatus: "Tweet çeviriliyor: {0}",
     translatedStatus: "Tweet çevrildi: {0}",
-    // Paylaşım seçenekleri
+    // Share options
     publishOptionLabel: "Paylaşım Seçeneği",
     publishOptionDraft: "Taslak olarak kaydet",
     publishOptionDirect: "Direkt paylaş",
     publishOptionDescription: "Tweet Buffer'a eklendiğinde taslak olarak kaydedilir veya hemen paylaşılır",
-    // Dil seçenekleri
+    // Languege options
     languageTitle: "Dil Seçimi",
     xUsernameLabel: "X Hesap Kullanıcı Adı",
     xUsernamePlaceholder: "X kullanıcı adınız",
@@ -166,12 +165,12 @@ const translations = {
     translateDescription: "Translates tweets to the selected language before transferring to Buffer",
     translatingStatus: "Translating tweet: {0}",
     translatedStatus: "Tweet translated: {0}",
-    // Paylaşım seçenekleri
+    // Share options
     publishOptionLabel: "Publish Option",
     publishOptionDraft: "Save as Draft",
     publishOptionDirect: "Publish Directly",
     publishOptionDescription: "The tweet will be saved as a draft or published immediately after adding it to Buffer",
-    // Dil seçenekleri
+    // Languege options
     languageTitle: "Language Selection",
     xUsernameLabel: "X Account Username",
     xUsernamePlaceholder: "Your X username",
