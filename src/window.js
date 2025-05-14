@@ -1,12 +1,12 @@
 const { BrowserWindow } = require("electron");
 const path = require("path");
 
-// Ana pencere referansı
+// Main window reference
 let mainWindow = null;
 
 /**
- * Ana pencereyi oluşturur
- * @returns {BrowserWindow} Oluşturulan pencere nesnesi
+ * Creates the main window
+ * @returns {BrowserWindow} Created window object
  */
 function createWindow() {
   mainWindow = new BrowserWindow({
@@ -32,7 +32,7 @@ function createWindow() {
 }
 
 /**
- * Ana pencereyi döndürür, yoksa null döner
+ * Rotates the main window, else null rotates
  * @returns {BrowserWindow|null}
  */
 function getMainWindow() {
