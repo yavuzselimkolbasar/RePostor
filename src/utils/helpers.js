@@ -1,19 +1,19 @@
 /**
- * Hesap URL'sini temizler ve formatlar
- * @param {string} accountUrl Ham hesap URL'si veya kullanıcı adı
- * @returns {string} Biçimlendirilmiş URL
+ * Resets and formats the account URL
+ * @param {string} accountUrl full account URL or username
+ * @returns {string} Formatted URL
  */
 function formatAccountUrl(accountUrl) {
   if (!accountUrl) return "";
 
   let formattedAccountUrl = accountUrl.trim();
 
-  // @ ile başlıyorsa, @ işaretini kaldır
+  // if starts with @, remove @
   if (formattedAccountUrl.startsWith("@")) {
     formattedAccountUrl = formattedAccountUrl.substring(1);
   }
 
-  // https:// ile başlamıyorsa, X.com URL'sine dönüştür
+  // If it doesn't start with https://, convert it to an X.com URL
   if (!formattedAccountUrl.startsWith("https://")) {
     formattedAccountUrl = `https://x.com/${formattedAccountUrl.replace(
       "https://x.com/",
@@ -25,8 +25,8 @@ function formatAccountUrl(accountUrl) {
 }
 
 /**
- * Tweet inceleme için konsol günlüğü göster
- * @param {object} tweet Tweet nesnesi
+ * Show console log for tweet inspection
+ * @param {object} tweet Tweet object
  */
 function logTweetDetails(tweet) {
   console.log("Tweet detayları:", {
